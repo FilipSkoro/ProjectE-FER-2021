@@ -8,4 +8,4 @@ njegovu lokaciju u odnosu na referentne točke. Pozadinski kontroler sadrži alg
 slike koju kontroler dobiva s letjelice prati put koji je Sphero prešao. Nakon što je Sphero prešao dio puta, kontroler mu šalje set instrukcija: u kojem smjeru i kojom 
 brzinom će se kretati dok ih Sphero ne izvrši. Potom će kontroler poslati novi set instrukcija dok Sphero ne prođe kroz cijeli labirint.
 
-Ključne riječi: 
+Ključne riječi: autonomni sustav, Sphero robot, dron, autonomna komponenta, kretanje kroz labirint, labirint, referentne točke, praćenje, optimalna putanja
