@@ -1,1 +1,11 @@
 Navigiranje Sphero robota kroz labirint uz pomoć bespilotne letjelice
+
+Ideja projekta je upoznavanje s radom zasebnih uređaja kao autonomni sustav. Za izvedbu navedenog projekta, od uređaja su nam na raspolaganju programibilni robot
+Sphero SPRK+ te bespilotna letjelica Parrot Bebop 2. Kao što ime projekta nalaže, korištenjem Bebop-a, potrebno je Sphero robotu pridati autonomnu komponentu koju
+sam po sebi ne sadrži, tj. omogućiti Sphero robotu da se uz upute Bebop-a kreće kroz labirint.
+Letjelica lebdi iznad labirinta te se pomoću referentnih točaka optimalno pozicionira iznad labirinta. Kamera letjelice konstantno snima labirint i Sphero-a te prati 
+njegovu lokaciju u odnosu na referentne točke. Pozadinski kontroler sadrži algoritam koji pronalazi optimalni put kroz labirint te potom šalje upute Sphero-u. Pomoću 
+slike koju kontroler dobiva s letjelice prati put koji je Sphero prešao. Nakon što je Sphero prešao dio puta, kontroler mu šalje set instrukcija: u kojem smjeru i kojom 
+brzinom će se kretati dok ih Sphero ne izvrši. Potom će kontroler poslati novi set instrukcija dok Sphero ne prođe kroz cijeli labirint.
+
+Ključne riječi: 
