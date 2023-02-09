@@ -1,0 +1,12 @@
+Navigation of the Sphero robot through the maze with the help of a drone
+
+The idea of the project is to familiarize with the operation of separate devices as an autonomous system. For the implementation of the mentioned project,
+we have at our disposal the programmable robot Sphero SPRK+ and the drone Parrot Bebop 2. As the name of the project dictates, by using Bebop, it is necessary
+to add an autonomous component to the Sphero robot that it does not contain by itself, i.e. enable Sphero the robot to move through the maze with Bebop's instructions.
+The aircraft hovers over the labyrinth and optimally positions itself above the labyrinth using reference points. The spacecraft's camera constantly records the maze and
+the Sphero and tracks its location in relation to reference points. The background controller contains an algorithm that finds the optimal path through the maze and then
+sends instructions to the Sphero. Using the image that the controller receives from the spacecraft, it tracks the path that the Sphero has traveled. After the Sphero has
+traveled part of the way, the controller sends it a set of instructions: in which direction and at what speed to move until the Sphero executes them. Then the controller
+will send a new set of instructions until the Sphero goes through the entire maze.
+
+Keywords: autonomous system, Sphero robot, drone, autonomous component, moving through the maze, labyrinth, reference points, tracking, optimal path
